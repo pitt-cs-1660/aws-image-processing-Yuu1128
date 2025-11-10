@@ -44,6 +44,10 @@ def exif_handler(event, context):
                     bucket_name = s3_record['bucket']['name']
                     object_key = s3_record['object']['key']
 
+                    if not object_key.startswith('exif/'):
+                        print(f"Skipping {object_key} - not in exif folder")
+                        continue
+
                     print(f"Processing: s3://{bucket_name}/{object_key}")
 
                     image = download_from_s3(bucket_name, object_key)

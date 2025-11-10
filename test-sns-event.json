@@ -1,0 +1,9 @@
+{
+  "Records": [
+    {
+      "Sns": {
+        "Message": "{\"Records\":[{\"s3\":{\"bucket\":{\"name\":\"yeg10-assignment3\"},\"object\":{\"key\":\"resize/test-1762750117-5137.jpg\"}}}]}"
+      }
+    }
+  ]
+}
